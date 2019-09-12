@@ -8,8 +8,8 @@ RUN apk add --update --no-cache \
       bash \
 
       #Intel® TBB, a widely used C++ template library for task parallelism'
-      libtbb@testing  \
-      libtbb-dev@testing   \
+      libtbb  \
+      libtbb-dev   \
 
       # Wrapper for libjpeg-turbo
       libjpeg  \
