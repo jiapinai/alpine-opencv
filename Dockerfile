@@ -7,10 +7,6 @@ RUN apk add --update --no-cache \
       wget \
       bash \
 
-      #Intel® TBB, a widely used C++ template library for task parallelism'
-      libtbb  \
-      libtbb-dev   \
-
       # Wrapper for libjpeg-turbo
       libjpeg  \
 
@@ -52,7 +48,6 @@ RUN mkdir /opt && cd /opt && \
   -D WITH_FFMPEG=NO \
   -D WITH_IPP=NO \
   -D WITH_OPENEXR=NO \
-  -D WITH_TBB=YES \
   -D BUILD_EXAMPLES=NO \
   -D BUILD_ANDROID_EXAMPLES=NO \
   -D INSTALL_PYTHON_EXAMPLES=NO \
