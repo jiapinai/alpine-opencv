@@ -58,7 +58,8 @@ RUN mkdir /opt && cd /opt && \
   -D INSTALL_PYTHON_EXAMPLES=NO \
   -D BUILD_DOCS=NO \
   -D BUILD_opencv_python2=NO \
-  -D BUILD_opencv_python3=NO && \
+  -D BUILD_opencv_python3=NO \
+  .. && \
   make VERBOSE=1 && \
   make && \
   make install && \
