@@ -58,14 +58,7 @@ RUN mkdir /opt && cd /opt && \
   -D INSTALL_PYTHON_EXAMPLES=NO \
   -D BUILD_DOCS=NO \
   -D BUILD_opencv_python2=NO \
-  -D BUILD_opencv_python3=ON \
-  -D PYTHON3_EXECUTABLE=/usr/local/bin/python \
-  -D PYTHON3_INCLUDE_DIR=/usr/local/include/python3.6m/ \
-  -D PYTHON3_LIBRARY=/usr/local/lib/libpython3.so \
-  -D PYTHON_LIBRARY=/usr/local/lib/libpython3.so \
-  -D PYTHON3_PACKAGES_PATH=/usr/local/lib/python3.6/site-packages/ \
-  -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/local/lib/python3.6/site-packages/numpy/core/include/ \
-  .. && \
+  -D BUILD_opencv_python3=NO && \
   make VERBOSE=1 && \
   make && \
   make install && \
