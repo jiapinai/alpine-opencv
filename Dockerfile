@@ -36,8 +36,8 @@ ENV CXX /usr/bin/clang++
 ENV OPENCV_VERSION=3.4.7
 
 RUN mkdir /opt && cd /opt && \
-  wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip && \
-  unzip ${OPENCV_VERSION}.zip && \
+  wget -q https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip && \
+  unzip -qq ${OPENCV_VERSION}.zip && \
   rm -rf ${OPENCV_VERSION}.zip && \
   apk add --update --no-cache build-base cmake && \
   mkdir -p /opt/opencv-${OPENCV_VERSION}/build && \
